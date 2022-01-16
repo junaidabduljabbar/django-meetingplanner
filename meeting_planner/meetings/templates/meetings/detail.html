@@ -4,10 +4,13 @@
     <title>{{meeting.title}}</title>
 </head>
 <body>
-<h1>{{meeting.title}}</h1>
-<p>
-This meeting is organized in room <strong> {{meeting.room}} </strong>, it is starting at {{meeting.start_time}} and would continue for
-{{meeting.duration}} hours.
-</p>
-</body>
+    <h1>{{meeting.title}}</h1>
+    <p>
+    This meeting is organized in room <strong> {{meeting.room}} </strong>, it is starting at {{meeting.start_time}} and would continue for
+    {{meeting.duration}} hours.
+    </p>
+
+    <a href="{% url 'welcome' %}">Home</a>
+
+    </body>
 </html>
